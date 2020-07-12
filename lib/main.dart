@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Qiita client app',
         theme: ThemeData(
-          primarySwatch: Colors.yellow,
+          primarySwatch: Colors.lime,
         ),
         home: ItemListScreen(),
       ),

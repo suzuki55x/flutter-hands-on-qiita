@@ -48,10 +48,14 @@ class ItemListRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () {
-    },
-    child: Container(
-      height: 60,
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) =>
+              ItemDetailScreen(title: item.title, url: item.url)
+        ));
+      },
+      child: Container(
+        height: 60,
         child: Row(
           children: [
             Container (
